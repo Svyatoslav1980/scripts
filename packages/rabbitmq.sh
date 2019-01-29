@@ -25,5 +25,5 @@ tar -xaf "${CACHED_DOWNLOAD}" --strip-components=1 --directory "${RABBITMQ_DIR}"
 
 ln -s "${RABBITMQ_DIR}/sbin/"* "${HOME}/bin"
 rabbitmq-server -detached
-sleep 5
+sleep 10
 rabbitmqctl status
